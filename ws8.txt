@@ -1,0 +1,65 @@
+Script started on 2022-10-28 16:30:56-04:00
+]0;eric@sjsu:/mnt/scratch/eric/ws8[eric@sjsu ws8]$ cd -
+/mnt/scratch/eric
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | wc -l
+229346
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$  cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@N
+2876174
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$ awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | head -100 |[K> VERIFIED.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+US	34103525	R2IUKLDR8YOU3B	0674011929	707555499	Nero	Books	4	17	17	N	Y	The man, the monster, the legend.	Champlin bravely asserts his own contribution to the great wealth of Neronian scholarship for the critics to pick apart. I find very little to quibble about.<br />It is difficult to write even-handedly about Nero for a Western audience. Who could forget the image of a man who \\"fiddled while Rome burned\\" or the terrible tyrant who had begun a nearly 170 year \\"persecution\\" of the early Christians, under whose reign both Peter and Paul were executed? As other reviewer comments reveal, you can easily earn the brand of a Nero \\"apologist\\" if you don't tow the party line, however inaccurate it might be.<br /><br />Champlin's thesis can be stated simply as follows: many, if not most of Nero's grandstands and outrageous actions, were performed out of considerable political shrewdness and calculation - not the madness or puerile excess wrongly attributed to a \\"live fast, die young, and leave a good looking corpse\\" emperor. Nero's success, Champlin argues in the first chapter, is evinced by a shockingly prolonged \\"afterlife\\" manifested in pseudo-Neros, Judeo-Christian apocalyptic writings, and a disenfranchised populace openly lamenting his death. Nonetheless, I cannot help but wonder, (working on the same assumption,) whether he had truly orchestrated his public relations as well as Champlin suggests given his untimely demise at age 30.<br /><br />Some reviewers disagree, but I reckon Champlin's original Nero-Periander link to be one of the most intriguing ideas in ancient biography I've ever seen. The ambivalent relationship with the mother, the Philhellenism, the artistic bent, and the numerous other links are too compelling to ignore outright, even if the conclusion a hard sell. Further research is warranted, but I suspect that Champlin, with his great intellect and energy, may have already exhausted all of the available evidence for advancing his thesis. He demonstrates the Augustus/Antony connections thoroughly. The discussion of the great fire of 64 is arrestingly well done: after convincingly presenting the defense for Nero's innocence, he suddenly shatters the deception in stating that despite this preceding evidence, Nero undoubtedly held direct responsibility for the coflagration. It hits you with dramatic effect almost equal to one of the primary sources comprising the centerpiece of his proof in this sudden reversal: Tacitus' Annales XV.67.<br /><br />Champlin's organization is somewhat bothersome as it is in \\"Final Judgments,\\" because he rejects chronological arrangement for thematic foci. This requires repetition of several facts, and I cannot understand his reasons for the chapter order. The post-mortem legacy of Nero, being most fascinating, he puts up front obviously to hook his reader. It serves as an interesting set piece for further discourse, because the inevitable wonder we feel about Nero's impression on the world ever after demands explanation: thus the rest of the book. But with Dio, Suetonius, and Tacitus unfolding the bulk of their own histories so methodically, the rearrangement isn't always a neat fit. Still, Champlin's brilliant weaving together of hundreds of sources, as before, vindicates his literary decisions several times over.<br /><br />Champlin, like any other historian, has his hypotheses and directs his evidence toward proving them. His presentation however, is replete with past scholarship and primary sources presented candidly and fairly. One of the most appreciable inclusions is the extensive collection of Latin graffiti, which add a critical dimension to our knowledge. This book has been for me an introduction into full-strength Neronian scholarship and I found it both accessible and empowering enough to read further with confidence.ngly presenting the defense for Nero's innocence, he suddenly shatters the deception in stating that despite this preceding evidence, Nero undoubtedly held direct responsibility for the coflagration. It hits you with dramatic effect almost equal to one of the primary sources comprising the centerpiece of his proof in this sudden reversal: Tacitus' Annales XV.67.    Champlin's organization is somewhat bothersome as it is in \\"Final Judgments,\\" because he rejects chronological arrangement for thematic foci. This requires repetition of several facts, and I cannot understand his reasons for the chapter order. The post-mortem legacy of Nero, being most fascinating, he puts up front obviously to hook his reader. It serves as an interesting set piece for further discourse, because the inevitable wonder we feel about Nero's impression on the world ever after demands explanation: thus the rest of the book. But with Dio, Suetonius, and Tacitus unfolding the bulk of their own histories so methodically, the rearrangement isn't always a neat fit. Still, Champlin's brilliant weaving together of hundreds of sources, as before, vindicates his literary decisions several times over.    Champlin, like any other historian, has his hypotheses and directs his evidence toward proving them. His presentation however, is replete with past scholarship and primary sources presented candidly and fairly. One of the most appreciable inclusions is the extensive collection of Latin graffiti, which add a critical dimension to our knowledge. This book has been for me an introduction into full-strength Neronian scholarship and I found it both accessible and empowering enough to read further with confidence.	2005-10-14
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$ awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | head -100 > head[K[K[K[Kverified.txt
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$ awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv | head -100 > verified.txt[C[1P[1@N[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuverified.txtnverified.txt
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$  awk '{print $14}' VERIFIED.txt | sort | uniq -c | sort -rn| head -10[1P[1P[1P[1P[1P[1P[1P[1P[1@v[1@e[1@r[1@i[1@f[1@i[1@e[1@d
+      4 I
+      3 you
+      3 of
+      3 but
+      3 a
+      2 This
+      2 the
+      2 Read
+      2 good
+      2 for
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$  awk '{print $14}' verified.txt | sort | uniq -c | sort -rn| head -10[1@u[1@n
+      6 A
+      5 I
+      3 was
+      3 The
+      3 Great
+      2 This
+      2 this
+      2 of
+      2 Is
+      2 in
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$ cmds [K[K[K[K[Khistorey [K[K[K[K[K[K[K[K[Kcmds[K[K[K[Khistory > cmds.log
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$ ls[K[Kls
+[0m[01;34ma4[0m                                 downloaded_tweets_extend_nolf2.tsv           Q2.csv          users_retweeted.txt  [01;34mws8[0m
+amazon_reviews_us_Books_v1_02.tsv  downloaded_tweets_extend_original_nolf2.tsv  retweets.txt    verified.txt
+cmds.log                           Q1.csv                                       unverified.txt  [01;34mws7[0m
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$ rm cmds.log 
+]0;eric@sjsu:/mnt/scratch/eric[eric@sjsu eric]$ rm cmds.log ls[Krm cmds.log [Krm cmds.log ls[Khistory > cmds.log[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ws8
+]0;eric@sjsu:/mnt/scratch/eric/ws8[eric@sjsu ws8]$ history > cmds.log
+]0;eric@sjsu:/mnt/scratch/eric/ws8[eric@sjsu ws8]$ ls
+cmds.log  ws8.txt
+]0;eric@sjsu:/mnt/scratch/eric/ws8[eric@sjsu ws8]$ vi ws7[K[K[K[K[K[Kexit
+
+Script done on 2022-10-28 16:33:59-04:00
+
+
+WS8.txt QnA
+
+Using awk to get verified/unverified reviews wc:
+cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/Y/ {print}' | wc -l
+cut -f12 amazon_reviews_us_Books_v1_02.tsv | awk '/N/ {print}' | wc -l
+
+
+Using awk to get entire text of verified/unverified and redirecting it to file:
+ awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv > verified.txt
+ awk '{if ($12 == "Y") {print $0}}' amazon_reviews_us_Books_v1_02.tsv > unverified.txt
+
+Finding top 10 frequent words used in review_body of each file:
+awk '{print $14}' verified.txt | sort | uniq -c | sort -rn| head -10
+awk '{print $14}' unverified.txt | sort | uniq -c | sort -rn| head -10
+
+Note: I only took the data for 100 reviews so the file size would be smaller as well as run faster
+
